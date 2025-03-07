@@ -1,0 +1,23 @@
+{
+  "name": "school-management-api",
+  "version": "1.0.0",
+  "description": "A Node.js API for school management.",
+  "main": "index.js",
+  "scripts": {
+    "start":"node src/index.js",
+    "dev":"nodemon src/index.js"
+  },
+  "keywords": [
+    "school",
+    "management",
+    "API",
+    "Node.js",
+    "Express"
+  ],
+  "author": "Harsh Vardhan Awasthi",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
