@@ -2,10 +2,10 @@
   "name": "school-management-api",
   "version": "1.0.0",
   "description": "A Node.js API for school management.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
   "keywords": [
     "school",
