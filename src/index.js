@@ -4,10 +4,12 @@ require("dotenv").config();
 
 const app = express();
 
+const router=require('./routes/schoolRoutes')
+
 app.use(express.json());
-
-
-app.listen(process.env.PORT, async () => {
+app.use('/',router);
+const PORT = process.env.PORT || 1000;
+app.listen(PORT, async () => {
   try {
     await sequelize.authenticate();
     console.log("Database Connected Successfully!");
@@ -15,7 +17,7 @@ app.listen(process.env.PORT, async () => {
     await sequelize.sync({ alter: true }); 
     console.log("Database synced!");
 
-    console.log(`Server is running on port ${process.env.PORT}`);
+    console.log(`Server is running on port ${PORT}`);
   } catch (error) {
     console.error("Database connection error:", error);
   }

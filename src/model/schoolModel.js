@@ -9,7 +9,7 @@ const School = sequelize.define(
       primaryKey: true,
       autoIncrement: true,
     },
-    schoolName: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -18,13 +18,13 @@ const School = sequelize.define(
       allowNull: false,
     },
     latitude: {
-      type: DataTypes.FLOAT,
+      type: DataTypes.DECIMAL(10, 6),
       allowNull: false,
     },
     longitude: {
-      type: DataTypes.FLOAT,
+      type: DataTypes.DECIMAL(10, 6),
       allowNull: false,
-    },
+    }
   },
   {
     timestamps: false,
